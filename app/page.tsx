@@ -31,7 +31,7 @@ export default function Page() {
           alt="FinSphere Descriptive Image" />
           <Image src={'/hero-mobile.png'} 
           height={1000} width={760} 
-          className="hidden md:block" 
+          className="block md:hidden" 
           alt="FinSphere Descriptive Image" />
         </div>
       </div>
