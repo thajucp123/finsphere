@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { poppins } from '@/app/ui/fonts';
+import Head from 'next/head';
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${poppins.className} antialiased`}>
+      <Head key="head">
+        <title>FinSphere</title>
+      </Head>
+        {children}</body>
     </html>
   );
 }
